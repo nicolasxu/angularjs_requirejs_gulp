@@ -1,7 +1,9 @@
-define(['angular', 'jquery'], function(angular, $){
+define(['angular', 'jquery', 'appRoutes'], function(angular, $, appRoutes){
 
-	angular.module('appModule', []);
-	console.log($);
 	
+	console.log(appRoutes);
+	var appModule = angular.module('appModule', []);
+	appRoutes(appModule);
+
 
 }); 

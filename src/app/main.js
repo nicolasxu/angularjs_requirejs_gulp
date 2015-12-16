@@ -3,7 +3,8 @@ requirejs.config({
     paths: {
     	angular: "bower_components/angular/angular",
     	jquery: "bower_components/jquery/dist/jquery",
-    	appModule: "app/appModule"
+    	appModule: "app/appModule",
+    	appRoutes: "app/appRoutes"
     },
     shim: {
     	'angular': {
