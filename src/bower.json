@@ -1,0 +1,25 @@
+{
+  "name": "angularjs_requirejs_gulp",
+  "authors": [
+    "Shenxin(Nicolas) Xu <xu.shenxin@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.22",
+    "angular": "angularjs#~1.4.8",
+    "jquery": "~2.1.4"
+  }
+}
