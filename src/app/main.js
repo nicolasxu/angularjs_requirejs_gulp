@@ -2,18 +2,24 @@ requirejs.config({
     baseUrl: '',
     paths: {
     	angular: "bower_components/angular/angular",
+    	'angular-route': "bower_components/angular-route/angular-route",
     	jquery: "bower_components/jquery/dist/jquery",
     	appModule: "app/appModule",
     	appRoutes: "app/appRoutes"
+    	
+    },
+    bundles: {
+
     },
     shim: {
-    	'angular': {
-    		deps: [],
-    		exports: 'angular'
+    	'appModule': {
+    		deps: ['angular-route', 'appRoutes']
     	}, 
-    	'jquery': {
-    		deps: [],
-    		exports: 'jquery'
+    	'angular-route': {
+    		deps: ['angular']
+    	}, 
+    	'angular': {
+    		deps: ['jquery']
     	}
     }
 });
