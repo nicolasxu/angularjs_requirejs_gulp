@@ -5,7 +5,9 @@ requirejs.config({
     	'angular-route': "bower_components/angular-route/angular-route",
     	jquery: "bower_components/jquery/dist/jquery",
     	appModule: "app/appModule",
-    	appRoutes: "app/appRoutes"
+    	appRoutes: "app/appRoutes",
+    	'clientModule': "app/client/clientModule",
+    	'vendorModule': "app/vendor/vendorModule"
     	
     },
     bundles: {
@@ -20,11 +22,15 @@ requirejs.config({
     	}, 
     	'angular': {
     		deps: ['jquery']
+    	}, 
+    	'clientModule': {
+    		deps: ['angular-route']
     	}
     }
 });
 
 requirejs(['appModule'], function(){
-	// kick start the application
+	// Application already bootstrapped
+	
 	
 });
